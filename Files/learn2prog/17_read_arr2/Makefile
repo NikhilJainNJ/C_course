@@ -1,0 +1,2 @@
+test : test.c
+	gcc -o test test.c -pedantic -std=gnu99 -Werror -Wall

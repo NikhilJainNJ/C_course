@@ -1,0 +1,48 @@
+hello. i am a giant test file.
+i would like to let you know i'm starting to see a trend in the later courses that, for some, may be a sub-optimal experience.
+
+the behavior itself follows this pattern:
+
+1. the course introduces a trivial example in passing. later on an assignment then cites code for your reference but the example
+is not easily searchable or indexed anywhere.
+this cipher code you that would help complete this example was in a quiz a few days back, but you likely missed it and you won't find it in
+any code samples. common sense (if not courtesy) would dictate the code just be included in the project, but no, figure it out yourself.
+after second guessing yourself a fair bit, someone from a forum post reposts the actual code you need (that should have come down with the original assignment).
+now you'll move on to step 2. this is the most fun part.
+
+2. included in the repo you will find a readme that is woefully underspecified without an example input or output. the assignment
+will not provide an input file or an output file for you to viably test your code locally.
+additionally, the readme will be so vague and underspecified, you will likely not be able to create a test for it yourself. when you submit
+the code, your graded file will simply state you failed three out of four tests
+without providing you any real helpful input on what you are, are not or should be doing.
+
+3. at this point you will feel a little disappointed, alone, confused and upset. you will log onto the forum and get one of several responses:
+  *. a well intentioned but generally unhelpful response that there is no way to help you without also giving away the answer
+    *. a response almost as vague as the markdown itself and generally not actionable
+      *. a rather passive aggressive hint that one should be grateful for any response at any cadence
+
+at this point you will take a deep sigh, wonder if this whole c thing was a mistake. the python and js people don't demand you use kludgy emacs. even the
+haskell people on random slack and irc channels without any incentive whatsoever to help you seem more dedicated to your success than the assistants of this paid course.
+for the reader of this file, i'd like you to know, it's not just you. the author of this file is a professional programmer who now works at amazon as a software
+engineer. this course really is unecessarily difficult at times.
+
+having that said, please don't be the angry person on the forums who keeps posting borderline abusive all caps messages. i wrote this file to help
+anyone like me in the future who is stuck have the tools to get themself unstuck. that's all i ever really wanted and think that's fair. my genuine sense is everyone
+is trying their hardest and no one deserves to be shouted at. we should help each other as much as practical.
+
+for the duke folks, i wrote this to help others as well as myself, but perhaps you could take the hint here, some of your assignments really need review as
+their presentation is much too "raw" and is very demoralizing for your students.
+
+as a professional software engineer i can say unambiguously, this is not normal, this is not helpful and this is just disreprectful to fellow programmers.
+starting in class three and continuing here, i am spending more time trying to figure out what you want, than actually
+learning c programming. the fact i had to create these files to complete the assignment is a strong indicator you may not be doing enough to help your students.
+
+hopefully this provides a concrete example of the situation, the task, the action and result (making it easier for me and others to
+answer this assignment). this is beneficial to you as well as it will reduce the amount of questions on the forum, frustration from students in posts, will likely
+improve the rating of your course, increase
+subscribership and increase the amount of people capable of interacting with c code. i think that's an outcome students and educators both desire.
+
+fellow students, please upvote this if you think this was helpful, think this is an appropriate baseline of quality for an assignment,
+or could be helpful to others so it remains high up in the forum to help others find it and benefit from it.
+
+also, all work was done in vim, the one true text editor.

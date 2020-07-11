@@ -1,0 +1,48 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct _retire_info{
+  int months;
+  double contribution;
+  double rate_of_return;
+} retire_info;
+
+void retirement(int startAge,        // in months
+		double initial,      // initial savings
+		retire_info working, // info about working
+                retire_info retired){  // info about being retired
+
+  // WORKING
+  //print the current balance "Age %3d month %2d you have $%.2lf\n"
+  //with savers age in years and months and balance in $
+  //calculate this for the number of months specified in the working struct
+  
+  //compute retirement balance each month while working
+    // calculate balance increase from returns (balance*rate of return)+ current balance+ monthly contribution
+  
+  //RETIREMENT
+  //do the same using retired struc info
+  // and print last working info
+}
+
+
+int main(void){
+  //retirement numbers
+  retire_info working;
+  retire_info retired;
+  int age = 327;
+  double savings = 21.345;
+
+  working.months = 489;
+  working.contribution = 1000;
+  working.rate_of_return = 0.045/12;
+
+  retired.months = 384;
+  retired.contribution = -4000;
+  retired.rate_of_return = 0.01/12;
+  
+  //call retirement function
+
+  printf("working rate of return: %d\n", working.rate_of_return);
+  return EXIT_SUCCESS;
+}

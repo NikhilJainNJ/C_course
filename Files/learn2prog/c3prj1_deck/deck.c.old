@@ -1,0 +1,96 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <assert.h>
+#include "deck.h"
+
+void print_hand(deck_t * hand){
+  //printf("Number of cards = %zu", (*hand).n_cards);
+  for (size_t i=0; i<(*hand).n_cards; i++){
+    print_card(*(*hand).cards[i]);
+    printf(" ");
+  }
+}
+
+
+int deck_contains(deck_t * d, card_t c) {
+  /*
+  printf("\nCard_t card = ");
+  print_card(c);
+  printf("\n");
+  */
+  
+  for (size_t i=0; i<(*d).n_cards; i++){
+    // printf("\nDeck_t card = ");
+    // print_card(*(*d).cards[i]);
+    
+    
+    
+    if ( (value_letter(*(*d).cards[i]) == value_letter(c)) &&
+	 (suit_letter(*(*d).cards[i]) == suit_letter(c)) ) {
+      return 1;
+    }
+    
+  }
+  //printf("\n-------------\n");
+  return 0;
+}
+
+
+void swap_cards(card_t * c0, card_t * c1){
+  card_t temp;
+
+  temp = *c0;
+  *c0 = *c1;
+  *c1 = temp;
+  
+}
+
+void shuffle(deck_t * d){
+  size_t n = (*d).n_cards;
+  int random = 0;
+  card_t * p0 = NULL;
+  card_t * p1 = NULL; 
+
+  for (size_t i=0; i<n; i++){
+    random = rand() %n;
+    p0 = (*d).cards[random];
+
+    random = rand() %n;
+    p1 = (*d).cards[random];
+
+    swap_cards(p0, p1);
+  }
+
+  /*
+  random = rand() %5;
+  card_t * p0 = (*d).cards[random];
+
+  random = rand() %5;
+  card_t * p1 = (*d).cards[random];
+
+  random = rand() %5;
+  card_t * p2 = (*d).cards[random];
+
+  random = rand() %5;
+  card_t * p3 = (*d).cards[random];
+
+  random = rand() %5;
+  card_t * p4 = (*d).cards[random];
+
+
+  
+  swap_cards(p0, p1);
+  swap_cards(p2, p3);
+  swap_cards(p3, p4);
+  */
+}
+
+void assert_full_deck(deck_t * d) {
+  assert((*d).n_cards == 52);
+  card_t c;
+  for (unsigned i = 0; i<52; i++){
+    c = card_from_num(i);
+    assert(deck_contains(d,c) == 1);
+  }
+}
+

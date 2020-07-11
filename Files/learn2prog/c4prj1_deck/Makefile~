@@ -1,0 +1,2 @@
+test_deckc4 : test_deckc4.c
+	gcc -o test_deckc4 test_deckc4.c -pedantic -Wall -Werror -std=gnu99 ggdb3

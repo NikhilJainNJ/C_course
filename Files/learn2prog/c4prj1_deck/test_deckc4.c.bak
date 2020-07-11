@@ -1,0 +1,32 @@
+#include "deck.c"
+#include "cards.c"
+
+
+
+int main(void){
+  
+  deck_t * d = malloc(sizeof(*d));
+  d->cards = malloc(sizeof(d->cards));
+  card_t * c = malloc(sizeof(*c));
+  size_t i = 0;
+
+  for (i=0; i<3; i++){
+    int n = rand() %52;
+    c = malloc(sizeof(c));
+    //printf("Random card : '%d'\n", n);
+    *c = card_from_num(n);
+    d->cards = realloc(d->cards, (i+1)*sizeof(d->cards));
+    d->cards[i] = c;
+    c = NULL;
+  }
+  d->n_cards = i;
+  
+  card_t c1 = card_from_num(51);
+  add_card_to(d, c1);
+ 
+  add_empty_card(d);
+
+  
+  make_deck_exclude(d);
+  return EXIT_SUCCESS;
+}

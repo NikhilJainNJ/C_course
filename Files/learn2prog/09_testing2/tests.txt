@@ -1,0 +1,31 @@
+// number of hands
+aaaaa
+aaaaa aaaaa
+aaaaa aaaaa aaaaa
+
+// more or less cards per hand
+aaaaa aaaaaa
+aaaaa aaaa
+
+aaaaaa aaaaa
+aaaa aaaaa
+
+// equality
+12579 12579
+a1257 a1257
+aa125 aa125
+aaa12 aaa12
+aaaa1 aaaa1
+
+// first hand win
+aaaaa aaaa1
+
+// second hand win
+aaaa1 aaaaa
+
+// not looking at first card
+abbbb bbbbb
+
+
+
+

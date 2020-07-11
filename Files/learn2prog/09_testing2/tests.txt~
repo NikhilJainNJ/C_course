@@ -1,0 +1,27 @@
+// number of inputs
+a
+a a
+a a a
+
+// more or less chars per input
+aaaaa aaaaaa
+aaaaa aaaa
+
+aaaaaa aaaaa
+aaaa aaaaa
+
+// correct input equality
+aaaaa aaaaa
+
+12579 12579
+a1257 a1257
+aa125 aa125
+aaa12 aaa12
+aaaa1 aaaa1
+
+// correct input 1 hand best
+aaaaa aaaa1
+aaaa1 aaaaa
+
+
+

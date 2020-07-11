@@ -1,0 +1,9 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+unsigned power(unsigned x, unsigned y);
+
+int main(void){
+  
+  return EXIT_SUCCESS;
+}

@@ -1,0 +1,92 @@
+//selecting the 5 best cards
+
+
+//21 off by one too much cards in second set
+As Jh 0d 9c 7c 6s 2c; As Jh 0d 9c 7c 6s 2c 2s
+
+//14 nothing first hand win
+As Kh 0d 8c 7c 6s 5h; Kc Qh Jd 9c 8c 6s 2c
+
+//nothing second hand win !!!
+Kc Qh Jd 9c 8c 6s 2c; As Kh 0d 8c 7c 6s 5h
+
+//nothing same cards except last fhw/shw 
+As Jh 0d 9c 7c 6s 2c; As Jh 0d 9c 7c 6s 5h
+
+
+
+//pair first hand win
+As Ah 0d 9c 7c 6s 5h; Ks Kh 0d 9c 7c 6s 5h
+
+//pair tie breaker highest fhw !!!
+As Ah 0d 9c 7c 6s 5h; As Ah 0d 9c 7c 6s 2c
+
+//""""""""""""""""""""""""  middle fhw
+//""""""""""""""""""""""""  lowest fhw
+
+
+
+//2 pairs fhw
+As Ah 0d 0d 7c 6s 2c; As Ah 9d 9c 7c 6s 5h
+//1  2 pairs wrong order 
+0s 7d Ah 0s 7c As 2c; Jd Qd 7c 6s 2c Jh Qs
+
+As Ah 0d 0d 7c 6s 2c; 0s 0h Ad Ac 7c 6s 5h
+
+//2 pairs shw !!!
+As Ah 9d 9c 7c 6s 5h; As Ah 0d 0d 7c 6s 2c
+//2 pairs tie breaker fhw !!!
+As Ah 0d 0d 7c 6s 5h; As Ah 0d 0c 7c 6s 2h
+//2 pairs tie breaker shw !!!
+
+
+//2 pairs only 4cards needed !!!
+As Ah Qd Qc 0c 6s 2c; As Ah Qd Qc 9c 6s 2c
+
+
+
+//three of a kind fhw
+As Ah Ad 9c 7c 6s 5h; As Ah Ad 9c 7c 6s 5h
+//three of a kind shw
+//three of a kind tie breaker highest fhw
+//three of a kind tie breaker highest shw
+//three of a kind tie breaker lowest fhw
+//three of a kind tie breaker lowest shw
+
+//straight fhw
+As Kh Qd Jc 0c 6s 2c; Ks Qh Jd 0c 9c 6s 2c
+//straight shw
+//straight ace low fhw
+As 2h 3d 4c 5c Js 0c; As Jh 0d 9c 7c 6s 5h
+//straight ace low shw
+
+
+
+//flush fhw
+Ac Jc 0d 9c 7c 6s 2c; Ac Jc 0d 9c 7c 6s 5h
+//flush shw
+
+//full house fhw
+//full house shw
+
+//four of a kind fhw
+As Ah Ad Ac 7c 6s 2c; Ks Kh Kd Kc 7c 6s 2c
+//four of a kind shw
+//four of a kind tie breaker fhw
+//four of a kind tie breaker shw
+//four of a kind 4 cards selected !!!
+As Ah Ad Ac 0c 6s 2c; As Ah Ad Ac 9c 6s 2c
+
+//straight flush fhw
+As Ks Qs Js 0s 6s 2c; As Kh Qd Jc 0c 6s 5h
+//straight flush shw
+//straight flush only 4 cards selected !!!
+As Ks Qs Js 0c 6d 2c; Ks Qs Js 0s 9c 6d 2c
+
+//straight flush ace low fhw
+As 2s 3s 4s 5s 6s 2c; As Jh 0d 9c 7c 6s 5h
+//straight flush ace low shw
+//straight + flush != straight flush
+As Ks Qs Js 0c 6s 2c; Ks Qh Jd 0c 9c 6s 2c
+
+
